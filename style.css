@@ -1,0 +1,146 @@
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+body {
+    font-size: 15px;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--Light-Gray);
+}
+.container {
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    opacity: 40%;
+
+}
+ul {
+    list-style: none;
+}
+h1 {
+    font-size: 25px;
+}
+.main-heading {
+    color: var(--Cyan);
+} 
+.h2-color {
+    color: var(--Bright-Yellow);
+    font-size: 15px;
+}
+p {
+    font-size: 16px;
+    line-height: 2;
+    color: #444;
+}
+h1 {
+    color: #fff;
+}
+h2 {
+    color: #fff;
+}
+span {
+    color: var(--Grayish-Blue);
+    font-size: 16px;
+    font-weight: 600;
+}
+.content {
+    margin: 10px 60px;
+    
+}
+/*join*/
+
+#join {
+    background-color: #fff;
+    padding: 10px 10px;
+ 
+}
+/*Subscription*/
+#Subscription {
+    background-color: #2BB3B1;
+    padding: 10px 0px;
+
+}
+button {
+    width: 87%;
+    padding: 17px 90px;
+    background-color: var(--Bright-Yellow);
+    outline: none;
+    border: none;
+    margin: 20px 0;
+    margin-left: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+/*why-us*/
+#why-us {
+    background-color: #4ABEBD;
+    color: var(--Light-Gray);
+    padding: 10px 10px;
+
+}
+#why-us li {
+    margin-bottom: 10px;
+    
+}
+
+
+@media (min-width:1440px) {
+    .container {
+        padding-top: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 70%;
+      margin: 0 auto;
+    }
+    .lead {
+        font-size: 27px;
+        line-height: 2;
+        color: #333; 
+        opacity: 40%;
+    }
+    p {
+        color: #fff;
+    }
+    .h2-color {
+        margin-top: 30px;
+        font-size: 25px;
+    }
+    #join {
+      flex-basis: 98%;
+      padding: 10px 40px;
+      border-radius: 10px 10px 0 0;
+
+    } 
+    #Subscription {
+       flex-basis: 48%;
+       border-radius: 0 0  0 10px;
+       
+       
+    }
+    #why-us {
+        flex-basis: 50%;
+        border-radius: 0 0  10px 0;
+        
+
+    }
+    .content {
+        margin: 10px 5px;
+        
+    }
+}
